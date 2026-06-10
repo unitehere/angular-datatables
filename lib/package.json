@@ -15,9 +15,9 @@
   "schematics": "./schematics/src/collection.json",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^19.0.1",
-    "@angular/core": "^19.0.1",
-    "@angular/platform-browser": "^19.0.1",
+    "@angular/common": "^20.3.24",
+    "@angular/core": "^20.3.24",
+    "@angular/platform-browser": "^20.3.24",
     "datatables.net": "^2.0.3",
     "datatables.net-dt": "^2.0.3",
     "jquery": "^3.6.0",

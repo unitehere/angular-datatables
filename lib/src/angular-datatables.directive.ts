@@ -70,7 +70,7 @@ export class DataTableDirective implements OnDestroy, OnInit {
       this.dtOptions = dtOptions;
     }
     this.dtInstance = new Promise((resolve, reject) => {
-      Promise.resolve(this.dtOptions).then(resolvedDTOptions => {
+      Promise.resolve(this.dtOptions).then((resolvedDTOptions: any) => {
         // validate object
         const isTableEmpty = Object.keys(resolvedDTOptions).length === 0 && $('tbody tr', this.el.nativeElement).length === 0;
         if (isTableEmpty) {
