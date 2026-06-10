@@ -31,17 +31,17 @@ Install the npm packages described in the `package.json` and verify that it work
 
 ```bash
 npm install
-npm run build
+npm run build:lib
 ```
 
-The `npm run build` command compiles the library,
+The `npm run build:lib` command compiles the library.
 
 ### npm scripts
 
 We've captured many of the most useful commands in npm scripts defined in the `package.json`:
 
-- `npm start` - Run the demo/docs app locally.
-- `npm demo:test` - compiles, runs and watches the karma unit tests (`*.spec.ts` files)
+- `npm run start` - Run the demo/docs app locally.
+- `npm run demo:test` - compiles, runs and watches the karma unit tests (`*.spec.ts` files)
 - `npm run build:lib` - compiles and generates prod builds for this library
 
 ### Updating dependencies version
@@ -135,7 +135,7 @@ Then go to the [release page](https://github.com/l-lin/angular-datatables/releas
 create a new release. There is an automatic [Github action](./.github/workflows/publish.yml) that
 publishes automatically to NPM repository.
 
-# Angular Schematics
+## Angular Schematics
 
 We use Angular Schematics for `ng add` functionality.
 
@@ -143,30 +143,30 @@ To build the schematics, issue the following command:
 
 `npm run lib:schematics:build`
 
-## Testing
+### Testing Angular Schematics
 
 To test schematics, you will need to setup `verdaccio`, publish the library locally in your machine, then install it via `ng add` in another Angular project, preferably a newly created one in another terminal window.
 
-### Steps
+#### Steps
 
 1. Install [verdaccio](https://verdaccio.org/)
 
    `npm install -g verdaccio`
 
-2. Start `verdaccio` server on a terminal or (command prompt if on Windows) by running:
+1. Start `verdaccio` server on a terminal or (command prompt if on Windows) by running:
 
    `verdaccio`
 
-3. Setup an account in `verdaccio` so you can publish the library on your machine:
+1. Setup an account in `verdaccio` so you can publish the library on your machine:
 
    - Run `npm adduser --registry=http://localhost:4873`
    - Give a username, password and an email address to create an account in `verdaccio`.
 
-4. Make your changes in the project.
+1. Make your changes in the project.
 
-5. Run `npm run build:lib` to build the library and `ng add` functionality related code.
+1. Run `npm run build:lib` to build the library and `ng add` functionality related code.
 
-6. Now, publish the library to `verdaccio` by running the command:
+1. Now, publish the library to `verdaccio` by running the command:
 
    ```sh
    # Make sure you compiled the library first! 
@@ -175,21 +175,21 @@ To test schematics, you will need to setup `verdaccio`, publish the library loca
    npm publish --registry http://localhost:4873
    ```
 
-5. Create an empty Angular project like:
+1. Create an empty Angular project like:
 
    `ng new my-demo-project`
 
-6. Install `angular-datatables` to this demo project by running:
+1. Install `angular-datatables` to this demo project by running:
 
    `ng add --registry=http://localhost:4873 angular-datatables`
 
-### Notes
+#### Notes
 
 1. The `--registry` flag informs `npm` to use `verdaccio` instead of NPM's registry server.
-2. If you're facing issues with `ng add` not grabbing code from `verdaccio`, try setting npm registry endpoint to `verdaccio` like:
+1. If you're facing issues with `ng add` not grabbing code from `verdaccio`, try setting npm registry endpoint to `verdaccio` like:
 
    `npm config set registry http://localhost:4873`
 
-3. Remember to reset changes made in step 2 or else `npm` will stop working when `verdaccio` is killed.
+1. Remember to reset changes made in step 2 or else `npm` will stop working when `verdaccio` is killed.
 
    `npm config set registry https://registry.npmjs.org`

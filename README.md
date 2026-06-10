@@ -1,6 +1,3 @@
-> [!CAUTION]
-> This project is no longer maintained! Feel free to fork it to your needs.
-
 # Angular DataTables
 
 ![build](https://github.com/l-lin/angular-datatables/workflows/build/badge.svg)
@@ -9,22 +6,21 @@
 
 > [Angular](https://angular.io/) + [DataTables](https://datatables.net/)
 
-# Documentation
+## Documentation
 
 Please check the [online documentation](http://l-lin.github.io/angular-datatables/)
 
-# Versioning
+## Versioning
 
 The major version of the project (it's using a [Semantic versioning](http://semver.org/)) is
 synchronized with the major version of Angular.
 
-# Getting involved
+## Getting involved
 
 Check the [developer guide](DEVELOPER.md)
 
-# LICENSE
+## LICENSE
 
 [MIT](LICENSE)
 
 [npm-link]: https://www.npmjs.com/package/angular-datatables
-
