@@ -23,7 +23,9 @@ export class DtInstanceComponent implements OnInit {
 
   displayToConsole(datatableElement: DataTableDirective | undefined): void {
     if (!datatableElement) return;
-    datatableElement.dtInstance.then(dtInstance => console.log(dtInstance));
+    datatableElement.dtInstance.then((dtInstance: any) => {
+      console.log(dtInstance);
+    });
   }
 
   ngOnInit(): void {
