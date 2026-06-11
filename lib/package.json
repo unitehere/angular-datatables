@@ -1,6 +1,6 @@
 {
   "name": "@unitehere/angular-datatables",
-  "version": "21.0.0",
+  "version": "21.0.1",
   "description": "Angular directive for DataTables",
   "keywords": [
     "Angular",
