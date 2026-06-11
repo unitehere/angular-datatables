@@ -18,7 +18,7 @@
     "Angular",
     "DataTables"
   ],
-  "author": "Louis LIN <lin.louis@pm.me> (https://l-lin.github.io/)",
+  "author": "UNITEHERE <hxiao@anthemengineering.com> (https://unitehere.github.io/)",
   "contributors": [
     "Michael Bennett <michael@strukt.org>",
     "Steven Masala <me@smasalai.com>",
@@ -91,10 +91,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/l-lin/angular-datatables.git"
+    "url": "git+https://github.com/unitehere/angular-datatables.git"
   },
   "bugs": {
-    "url": "https://github.com/l-lin/angular-datatables/issues"
+    "url": "https://github.com/unitehere/angular-datatables/issues"
   },
-  "homepage": "https://github.com/l-lin/angular-datatables#readme"
+  "homepage": "https://github.com/unitehere/angular-datatables#readme"
 }
