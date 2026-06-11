@@ -42,7 +42,7 @@ export interface IDemoNgComponentEventType {
 // ng-template-ref.component.ts
 
 import { AfterViewInit, Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { ADTSettings,  } from 'angular-datatables';
+import { ADTSettings,  } from '@unitehere/angular-datatables';
 import { Subject } from 'rxjs';
 import { IDemoNgComponentEventType } from './demo-ng-template-ref-event-type';
 import { DemoNgComponent } from './demo-ng-template-ref.component';

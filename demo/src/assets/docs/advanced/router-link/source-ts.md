@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { IDemoNgComponentEventType } from './demo-ng-template-ref-event-type';
 import { DemoNgComponent } from './demo-ng-template-ref.component';
-import { ADTSettings } from 'angular-datatables';
+import { ADTSettings } from '@unitehere/angular-datatables';
 
 @Component({
   selector: 'app-router-link',

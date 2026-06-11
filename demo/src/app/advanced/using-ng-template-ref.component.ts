@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnInit, TemplateRef, ViewChild } from '@angul
 import { Subject } from 'rxjs';
 import { IDemoNgComponentEventType } from './demo-ng-template-ref-event-type';
 import { DemoNgComponent } from './demo-ng-template-ref.component';
-import { ADTSettings } from 'angular-datatables';
+import { ADTSettings } from '@unitehere/angular-datatables';
 
 @Component({
     selector: 'app-using-ng-template-ref',

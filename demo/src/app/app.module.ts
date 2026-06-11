@@ -3,7 +3,7 @@ import { NgModule, provideZoneChangeDetection, SecurityContext } from '@angular/
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { DataTablesModule } from 'angular-datatables';
+import { DataTablesModule } from '@unitehere/angular-datatables';
 
 import { AppRoutingModule } from './app.routing';
 

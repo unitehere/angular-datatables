@@ -10,7 +10,7 @@ providers: [
 
 import { UpperCasePipe, CurrencyPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ADTSettings } from 'angular-datatables';
+import { ADTSettings } from '@unitehere/angular-datatables';
 
 @Component({
   selector: 'app-using-ng-pipe',
