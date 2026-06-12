@@ -50,7 +50,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "linklocal": "^2.8.2",
     "ng-packagr": "^21.2.5",
-    "ngx-markdown": "^20.1.0",
+    "ngx-markdown": "^21.3.0",
     "rimraf": "~3.0.2",
     "typescript": "~5.9.3"
   },
@@ -80,7 +80,7 @@
     "datatables.net-select-dt": "^2.0.0",
     "jquery": "^3.6.0",
     "jszip": "^3.8.0",
-    "marked": "^15.0.3",
+    "marked": "^18.0.5",
     "materialize-css": "^0.100.2",
     "prism-themes": "^1.9.0",
     "prismjs": "^1.27.0",
