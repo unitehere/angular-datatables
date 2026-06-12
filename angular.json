@@ -16,9 +16,7 @@
             },
             "index": "demo/src/index.html",
             "tsConfig": "demo/src/tsconfig.app.json",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "assets": [
               "demo/src/assets",
               "demo/src/data",
@@ -49,7 +47,6 @@
               "node_modules/datatables.net-colreorder/js/dataTables.colReorder.min.js",
               "node_modules/datatables.net-responsive/js/dataTables.responsive.min.js",
               "node_modules/datatables.net-select/js/dataTables.select.min.js",
-              "node_modules/marked/marked.min.js",
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/components/prism-typescript.min.js",
               "node_modules/prismjs/components/prism-javascript.min.js",
@@ -65,9 +62,7 @@
             "sourceMap": true,
             "optimization": false,
             "namedChunks": true,
-            "allowedCommonJsDependencies": [
-              "jquery"
-            ],
+            "allowedCommonJsDependencies": ["jquery"],
             "browser": "demo/src/main.ts"
           },
           "configurations": {
@@ -100,10 +95,7 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "demo/src/tsconfig.spec.json",
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -135,9 +127,7 @@
               "demo/src/data",
               "demo/src/favicon.png"
             ],
-            "include": [
-              "**/*.spec.ts"
-            ]
+            "include": ["**/*.spec.ts"]
           }
         }
       }
@@ -167,15 +157,11 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "eslintConfig": "lib/.eslintrc.json",
-            "lintFilePatterns": [
-              "lib/**/*.ts",
-              "lib/**/*.html"
-            ]
+            "lintFilePatterns": ["lib/**/*.ts", "lib/**/*.html"]
           }
         }
       }
     }
-
   },
   "schematics": {
     "@schematics/angular:component": {

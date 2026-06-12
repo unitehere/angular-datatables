@@ -41,7 +41,7 @@ import { SelectExtensionComponent } from './extensions/select-extension.componen
 import { CommonModule, CurrencyPipe, UpperCasePipe } from '@angular/common';
 
 // Markdown
-import { MarkdownModule } from 'ngx-markdown';
+import { MarkdownModule, provideMarkdown, SANITIZE } from 'ngx-markdown';
 import { DemoNgComponent } from './advanced/demo-ng-template-ref.component';
 import { UsingNgTemplateRefComponent } from './advanced/using-ng-template-ref.component';
 import { BaseDemoComponent } from './base-demo/base-demo.component';
@@ -91,12 +91,17 @@ import { MoreHelpComponent } from './more-help/more-help.component';
     ReactiveFormsModule,
     DataTablesModule,
     AppRoutingModule,
-    MarkdownModule.forRoot({
-      sanitize: SecurityContext.NONE
-    })],
+    MarkdownModule.forRoot()
+  ],
   providers: [
     UpperCasePipe,
     CurrencyPipe,
+    provideMarkdown({
+      sanitize: {
+        provide: SANITIZE,
+        useValue: SecurityContext.NONE
+      },
+    }),
     provideZoneChangeDetection(),
     provideHttpClient(withInterceptorsFromDi())
   ]
